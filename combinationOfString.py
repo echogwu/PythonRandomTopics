@@ -30,7 +30,7 @@ class Combination:
         self.out_str = self.out_str[:len(self.out_str)-1]
 
     '''
-    #another way of implement combination
+    #another way to implement function combination
     def combination(self, n):
         for i in range(n, self.in_len):
             self.out_str += self.in_str[i]
