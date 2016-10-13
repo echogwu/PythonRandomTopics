@@ -29,5 +29,16 @@ class Combination:
         print self.out_str
         self.out_str = self.out_str[:len(self.out_str)-1]
 
+    '''
+    #another way of implement combination
+    def combination(self, n):
+        for i in range(n, self.in_len):
+            self.out_str += self.in_str[i]
+            print self.out_str
+            if i < self.in_len:
+                self.combination(i + 1)
+            self.out_str = self.out_str[:len(self.out_str)-1]
+    '''
+
 com = Combination("abc")
 com.combine()
